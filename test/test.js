@@ -5,7 +5,8 @@ exports["basic test"] = function (test) {
 		a : {
 			b : {
 				c : {
-					"#" : { d : "asdf"}
+					 //d : [{aa: 1}, {ab:2}, {ac:3}]
+					 d : [1,2,3,4,5,6]
 				}
 			}
 			, e : {
@@ -55,7 +56,7 @@ exports["basic test"] = function (test) {
 		+ '<i numeric="42" />\n'
 		+ '<j numeric="42">value</j>\n'
 		;
-
+	console.log(str)
 	test.equal(expect, str);
 	test.done();
 }
